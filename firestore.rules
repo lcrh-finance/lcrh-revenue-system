@@ -1,0 +1,22 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Only authenticated users can read/write revenue records
+    match /revenue/{docId} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null;
+      allow update, delete: if request.auth != null &&
+        (request.auth.token.role == "admin" ||
+         resource.data.createdBy == request.auth.uid);
+    }
+
+    // User profiles — readable by all auth users, writable only by admin
+    match /users/{userId} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && request.auth.token.role == "admin";
+      // Allow users to read their own profile
+      allow read: if request.auth.uid == userId;
+    }
+  }
+}
