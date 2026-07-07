@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.js": "/lcrh-revenue-system/static/js/main.6c782c67.js",
+    "static/js/239.e34c70c5.chunk.js": "/lcrh-revenue-system/static/js/239.e34c70c5.chunk.js",
+    "static/js/213.63e951aa.chunk.js": "/lcrh-revenue-system/static/js/213.63e951aa.chunk.js",
+    "static/js/455.1ef03587.chunk.js": "/lcrh-revenue-system/static/js/455.1ef03587.chunk.js",
+    "index.html": "/lcrh-revenue-system/index.html",
+    "main.6c782c67.js.map": "/lcrh-revenue-system/static/js/main.6c782c67.js.map",
+    "239.e34c70c5.chunk.js.map": "/lcrh-revenue-system/static/js/239.e34c70c5.chunk.js.map",
+    "213.63e951aa.chunk.js.map": "/lcrh-revenue-system/static/js/213.63e951aa.chunk.js.map",
+    "455.1ef03587.chunk.js.map": "/lcrh-revenue-system/static/js/455.1ef03587.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.6c782c67.js"
+  ]
+}
